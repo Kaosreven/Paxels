@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "paxels",
+  "version": "${version}",
+
+  "name": "Paxels",
+  "description": "Just a port of paxels with extra mod compatibility",
+  "authors": [
+    "Kaosreven"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Kaosreven",
+    "sources": "https://github.com/Kaosreven/Paxels"
+  },
+
+  "license": "MIT",
+  "icon": "assets/paxels/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "com.github.kaosreven.paxels.events.init.ItemListener",
+      "com.github.kaosreven.paxels.events.init.RecipeListener"
+    ],
+    "stationapi:event_bus_client": [
+      "com.github.kaosreven.paxels.events.init.TextureListener"
+    ],
+    "stationapi:event_bus_server": [
+    ],
+    "bhcreative:event_bus": [
+      "com.github.kaosreven.paxels.events.init.CreativeListener"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": ">=2.0.0-alpha.5.4"
+  }
+}
