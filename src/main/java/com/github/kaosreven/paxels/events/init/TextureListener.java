@@ -19,10 +19,10 @@ public class TextureListener {
         ItemListener.Gold_Paxel.setTexture(of(MOD_ID, "item/Gold_Paxel"));
         ItemListener.Diamond_Paxel.setTexture(of(MOD_ID, "item/Diamond_Paxel"));
         if (FabricLoader.getInstance().isModLoaded("aether")) {
-            ItemListener.Skyroot_Paxel.setTexture(of(MOD_ID, "item/Aether/Skyroot_Paxel"));
-            ItemListener.Holystone_Paxel.setTexture(of(MOD_ID, "item/Aether/Holystone_Paxel"));
-            ItemListener.Zanite_Paxel.setTexture(of(MOD_ID, "item/Aether/Zanite_Paxel"));
-            ItemListener.Gravitite_Paxel.setTexture(of(MOD_ID, "item/Aether/Gravitite_Paxel"));
+            ItemListener.Skyroot_Paxel.setTexture(of(MOD_ID, "item/ModCompat/Aether/Skyroot_Paxel"));
+            ItemListener.Holystone_Paxel.setTexture(of(MOD_ID, "item/ModCompat/Aether/Holystone_Paxel"));
+            ItemListener.Zanite_Paxel.setTexture(of(MOD_ID, "item/ModCompat/Aether/Zanite_Paxel"));
+            ItemListener.Gravitite_Paxel.setTexture(of(MOD_ID, "item/ModCompat/Aether/Gravitite_Paxel"));
         }
     }
 }

@@ -26,6 +26,8 @@ public class ItemListener {
     public static Item Holystone_Paxel;
     public static Item Zanite_Paxel;
     public static Item Gravitite_Paxel;
+    public static Item Refined_Paxel;
+    public static Item Pumpkin_Paxel;
 
     @EventListener
     public void registerItems(ItemRegistryEvent event) {
