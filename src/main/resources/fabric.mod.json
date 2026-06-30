@@ -1,34 +1,34 @@
 {
   "schemaVersion": 1,
-  "id": "paxels",
-  "version": "${version}",
+  "id": "${mod_id}",
+  "version": "${mod_version}",
 
-  "name": "Paxels",
-  "description": "Just a port of paxels with extra mod compatibility",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "authors": [
     "Kaosreven"
   ],
   "contact": {
     "homepage": "https://github.com/Kaosreven",
-    "sources": "https://github.com/Kaosreven/Paxels"
+    "sources": "${mod_source}"
   },
 
-  "license": "MIT",
-  "icon": "assets/paxels/icon.png",
+  "license": "${mod_license}",
+  "icon": "assets/${mod_id}/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "com.github.kaosreven.paxels.events.init.ItemListener",
-      "com.github.kaosreven.paxels.events.init.RecipeListener"
+      "${maven_group}.${mod_id}.events.ItemListener",
+      "${maven_group}.${mod_id}.events.RecipeListener"
     ],
     "stationapi:event_bus_client": [
-      "com.github.kaosreven.paxels.events.init.TextureListener"
+      "${maven_group}.${mod_id}.events.TextureListener"
     ],
     "stationapi:event_bus_server": [
     ],
     "bhcreative:event_bus": [
-      "com.github.kaosreven.paxels.events.init.CreativeListener"
+      "${maven_group}.${mod_id}.events.CreativeListener"
     ]
   },
   "mixins": [
@@ -36,6 +36,6 @@
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3",
-    "stationapi": ">=2.0.0-alpha.5.4"
+    "stationapi": ">=${stapi_version}"
   }
 }
